@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Mood</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="card">
+      <h1>Weather in Real Time</h1>
+      <p class="subtitle">Choose a city and Find the live mood! <br> What's the weather like in your favourite city? 
+
+    <div class="city-buttons">
+        <button type="button" data-city="Toronto" data-lat="43.65" data-lon="-79.38">
+          Toronto
+        </button>
+        <button type="button" data-city="Boston" data-lat="42.36" data-lon="-71.06">
+          Boston
+        </button>
+        <button type="button" data-city="Bengaluru" data-lat="12.97" data-lon="77.59">
+          Bengaluru
+        </button>
+        <button type="button" data-city="Rome" data-lat="41.90" data-lon="12.50">
+          Rome
+        </button>
+      </div>
+
+      <h2 id="city-label">Toronto</h2>
+      <p>Current temperature:</p>
+      <p id="temperature">Loading...</p>
+      <p id="message"></p>
+
+     <div class="details">
+      <p id="feels-like">Feels like: --°C</p>
+      <p id="wind">Wind speed: -- km/h</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
